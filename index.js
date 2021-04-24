@@ -13,8 +13,8 @@ app.post('/create-checkout-session', async (req, res) => {
     payment_method_types: ['card'],
     line_items: payment_data,
     mode: 'payment',
-    success_url: 'http://localhost:3000/orderSuccess',
-    cancel_url: 'http://localhost:3000',
+    success_url: 'http://https://naughty-mccarthy-84f156.netlify.app/orderSuccess',
+    cancel_url: 'http://https://naughty-mccarthy-84f156.netlify.app/',
   });
   res.json({ id: session.id });
 });
