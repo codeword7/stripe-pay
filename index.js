@@ -18,7 +18,7 @@ app.post('/create-checkout-session', async (req, res) => {
     line_items: payment_data,
     mode: 'payment',
     success_url: 'https://naughty-mccarthy-84f156.netlify.app/orderSuccess',
-    cancel_url: 'http://https://naughty-mccarthy-84f156.netlify.app/',
+    cancel_url: 'https://naughty-mccarthy-84f156.netlify.app/',
   });
   res.json({ id: session.id });
 });
