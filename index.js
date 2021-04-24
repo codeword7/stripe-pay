@@ -6,7 +6,7 @@ app.use(cors({
   origin: true
 }));
 app.use(express.json());
-const stripe = require('stripe')('sk_test_iPKB77psH3YICxlLnZ7ykhEp')
+const stripe = require('stripe')(process.env.SECRET_KEY)
 
 app.get('/', (req, res) => {
   res.send('hello');
